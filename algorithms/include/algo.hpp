@@ -2,6 +2,13 @@
 #define ALGO_H_
 
 #include "types.hpp"
+#include <stdio.h>
+#include <stdint.h>
+
+typedef struct {
+    int *data;
+    size_t len;
+} Array;
 
 long fibonacci(const int n)
 {
@@ -16,16 +23,16 @@ b = temp;
 }
 return b;
 }
-int main()
-{
-    int n = 10;  
-    printf("Fibonacci of %d is: %lld\n", n, fibonacci(n));
-    return 0;
-}
+
 
 int linear_search(Array * a, const int target)
 {
-    return 0;
+    for (size_t i = 0; i <a->len; ++i {
+        if (a->data[i] == target) {
+        return i;
+     }
+    }
+    return -1;
 }
 
 long factorial(const int n)
