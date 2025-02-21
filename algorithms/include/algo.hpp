@@ -16,6 +16,12 @@ b = temp;
 }
 return b;
 }
+int main()
+{
+    int n = 10;  
+    printf("Fibonacci of %d is: %lld\n", n, fibonacci(n));
+    return 0;
+}
 
 int linear_search(Array * a, const int target)
 {
