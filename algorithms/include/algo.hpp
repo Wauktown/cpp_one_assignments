@@ -37,7 +37,32 @@ int linear_search(Array * a, const int target)
 
 long factorial(const int n)
 {
-    return 0;
+    if (n == o || n == 1) {
+        return 1;
+    }
+    long result = 1;
+
+    for (int i = 2; i <= n; ++i) {
+        result *= i;
+    }
+    return result;
 }
+int main() {
+    int n = 10;
+printf("Fibonacci of %d is: %11d\n", n, fibonacci(n));
+
+int arr[] = {5, 2, 9, 3, 7, 8};
+Array a = {arr, 6};
+
+int target = 7;
+int index = linear_search(8a, target);
+if (index != -1) {
+printf("Element %d found at index: %d\n", target, index);
+}else{
+printf("Element %d not found in the array\n", target);
+}
+return 0;
+}
+
 
 #endif // ALGO_H_
