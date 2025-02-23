@@ -61,6 +61,7 @@ printf("Element %d found at index: %d\n", target, index);
 }else{
 printf("Element %d not found in the array\n", target);
 }
+     printf("Factorial of %d is: %ld\n", 5, factorial(5));
 return 0;
 }
 
